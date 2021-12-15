@@ -1,6 +1,6 @@
 #user input for variables
-    [int]$DurationInHours = Read-Host -Prompt 'Provide number of hours to activate Azure AD privileged roles - Max is 8 hours. If you only need the roles activated for less than 8 hours please enter a smaller value'
-    if ($DurationInHours -gt 8) {
+    [int]$DurationInHours = Read-Host -Prompt 'Provide number of hours to activate Azure AD privileged roles - Max is 10 hours. If you only need the roles activated for less than 8 hours please enter a smaller value'
+    if ($DurationInHours -gt 10) {
         Write-Host 'Number of hours to activate Azure AD privileged roles is greater than 8, please run script again with a valid value' -ForegroundColor Yellow
         Start-Sleep -s 7
         Exit    
